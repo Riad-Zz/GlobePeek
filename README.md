@@ -1,12 +1,27 @@
-# React + Vite
+# GlobePeek
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GlobePeek is an interactive web application built with **React** and **Vite** that allows users to explore information about countries from around the world. It fetches data from a public API, displays it in an organized layout, supports **live search**, and provides detailed information via **modals**.  
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Fetch Country Data**: Retrieve detailed information about countries using a public API.  
+- **Live Search**: Quickly filter countries as you type.  
+- **Modal View**: Click on a country to see more details in a popup modal.  
+- **React + Vite**: Fast development setup with hot module replacement.  
+- **Tailwind CSS**: Clean, responsive, and modern UI styling.  
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have these installed:  
+
+- [Node.js](https://nodejs.org/)  
+- [npm](https://www.npmjs.com/)  
+
+### Installation
+
+1. **Clone the repository**  
+
+```bash
+git clone https://github.com/Riad-Zz/GlobePeek.git
