@@ -1,6 +1,6 @@
 // import button from 'daisyui/components/button';
 import React, { useState } from 'react';
-import LanguageButton from './languageButton';
+import LanguageButton from './LanguageButton';
 
 const Country = ({country,handleVisitedCountry}) => {
     //---------Currency Object------------------ 
