@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Nav = () => {
+const Nav = ({search,setSearch}) => {
     return (
         <div className="navbar bg-base-100 pt-3">
   <div className="flex-1">
     <p className="text-2xl font-bold text-blue-500">GlobePeek</p>
   </div>
   <div className="flex gap-2">
-    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+    <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" value={search} onChange={(e) =>setSearch( e.target.value)}/>
     <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">

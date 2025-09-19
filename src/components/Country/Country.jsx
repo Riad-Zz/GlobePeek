@@ -2,24 +2,28 @@
 import React, { useState } from 'react';
 import LanguageButton from './languageButton';
 
-const Country = ({country}) => {
-    // Currency Object 
+const Country = ({country,handleVisitedCountry}) => {
+    //---------Currency Object------------------ 
     const currencyObject = country?.currencies?.currencies ;
     const currencyCode = Object.keys(currencyObject)[0] ;
-    //Language Object 
+    //------------Language Object------------------- 
     const languageObject = country.languages.languages ;
     const languageCode = Object.keys(languageObject) ;
 
-    //Handle Visited button CLick 
+    //------------Handle Visited button CLick State---------------------- 
     const [status,setStatus] = useState(false)
     const hadleVisitedButton = ()=> {
-        setStatus(!status) 
+        setStatus(!status) ;
+        // console.log(country) ;
+
+        //-----Passing Value to Countries Component with clicked Country-------
+        if(!status) handleVisitedCountry(country) ;
     }
    
     return (
         <div className=' border-1 px-2 py-2 rounded-xl'>
-            <div className='flex justify-center'>
-            <img  alt="" className='rounded-xl'/>
+            <div className='flex justify-center '>
+            <img  src={country.flags.flags.png} alt="" className='rounded-xl'/>
             </div>
             <div className='text-center py-2'>
             <p className='text-2xl font-bold '>{country.name.common}</p>
