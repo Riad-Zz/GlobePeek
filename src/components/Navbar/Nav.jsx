@@ -14,7 +14,7 @@ const Nav = ({search,setSearch}) => {
         <div className="w-10 rounded-full">
           <img
             alt="Profile Image"
-            src="public/icn.jpg"/>
+            src="icn.jpg"/>
         </div>
       </div>
       <ul
