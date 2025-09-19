@@ -1,6 +1,6 @@
 import { Suspense, useState } from 'react';
 import './App.css'
-import Countries from './components/Countries/countries'
+import Countries from './components/Countries/Countries'
 import Country from './components/Country/Country'
 import Nav from './components/Navbar/Nav'
 
