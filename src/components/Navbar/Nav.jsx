@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Nav = ({search,setSearch}) => {
     return (
         <div className="navbar bg-base-100 pt-3">
@@ -13,7 +14,7 @@ const Nav = ({search,setSearch}) => {
         <div className="w-10 rounded-full">
           <img
             alt="Profile Image"
-            src='/src/assets/icn.jpg'/>
+            src="public/icn.jpg"/>
         </div>
       </div>
       <ul
