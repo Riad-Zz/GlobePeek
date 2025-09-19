@@ -1,5 +1,5 @@
 // import button from 'daisyui/components/button';
-import React from 'react';
+import React, { useState } from 'react';
 import LanguageButton from './languageButton';
 
 const Country = ({country}) => {
@@ -8,9 +8,14 @@ const Country = ({country}) => {
     const currencyCode = Object.keys(currencyObject)[0] ;
     //Language Object 
     const languageObject = country.languages.languages ;
-    // console.log(languageObject) ;
     const languageCode = Object.keys(languageObject) ;
-    // console.log(languageCode) ;
+
+    //Handle Visited button CLick 
+    const [status,setStatus] = useState(false)
+    const hadleVisitedButton = ()=> {
+        setStatus(!status) 
+    }
+   
     return (
         <div className=' border-1 px-2 py-2 rounded-xl'>
             <div className='flex justify-center'>
@@ -27,10 +32,7 @@ const Country = ({country}) => {
                     ) 
             }
             </div>
-            
-            
-            
-            <button className="btn btn-wide bg-red-300 my-2 rounded-2xl">Not Visited</button>
+            <button onClick={hadleVisitedButton} className={`btn btn-wide ${status ? ` bg-green-500` : `bg-red-400`} my-2 rounded-2xl`}>{status ? "Visited" : "Not Visited"}</button>
             </div>
         </div>
     );
